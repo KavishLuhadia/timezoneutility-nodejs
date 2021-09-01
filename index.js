@@ -4,9 +4,9 @@ moment.tz.setDefault("Europe/Dublin");
 
 let targetTimeZone;
 
-if(process.argv.length!= 3) {
+if(process.argv.length!= 3) { //process is provided by nodejs
   console.log("Usage is node <file-name> <Time Zone>");
-  process.exit(1);
+  process.exit(1); //exit the application
 }
 else {
     targetTimeZone = process.argv[2];
